@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+
+	background:pink;
+	font-family: sans-serif;
+}
+
+.talking-head{
+	font-weight: 700;
+	font-size: 3em;
+	text-decoration: underline;
+	width: 25%;
+	padding: 20px;
+}
+
+.main{	
+	width: 90%;
+	height: 500px;
+	margin: 100px auto;	
+	overflow: auto;
+	z-index: -1;
+}
+
+.main-2{
+	position: absolute;
+	top:300px;
+	right: 100px;
+	height: 100%;
+	opacity: 0.5;
+	z-index: 100;
+}
+ 
+.main-3{
+	position: absolute;
+	top:330px;
+	right: 142px;
+	height: 100%;
+	opacity: 0.2;
+	z-index: 100;
+}
+
+.square{
+	transition:width 5s ease;
+	width: 100px;
+	height: 100px;
+	background: #EAFAF1;
+	float: left;
+	margin: 15px;
+}
+
+.square:hover{
+	width: 500px;
+}
+
+
+
+
+
