@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+
+	background:gray;
+	font-family: sans-serif;
+}
+
+h1{
+	font-size: 10em;
+}
+
+p{
+	width: 50%;
+	margin: 50px;
+	font-size: 1em;
+}
+
+.main{	
+	width: 80%;
+	margin: 100px auto;	
+}
+
+#blue-bold{
+	color: #0000ff;
+	font-weight: lighter;
+	font-style: oblique;
+}
+#red-bold{
+	color: #FF0000;
+	font-weight: bold;
+	font-style: oblique; 
+}
+
+#green-bold{
+	color: #145A32;
+	font-weight: bolder;
+	font-style: oblique;
+}
+
+.center{
+	text-align: center;
+	padding: 20px;
+}
+
