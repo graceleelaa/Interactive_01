@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<script>
+
+			$(document).ready(function(){
+
+				var dogAudio = $("#bark")[0];
+				$("#box1").mouseenter(function(){
+					dogAudio.play();
+				});
+				
+			});
+
+		</script>
+
+		<style>
+			#box1{
+				width: 1200px;
+				height: 1200px;
+				background-image: url(fish.png);
+				background-repeat: no-repeat;
+				/*background-color: red;*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box1">
+		</div>
+
+		<audio id="bark">
+			<source src="bark.wav" type="audio/wav">
+		</audio>
+
+
+	</body>
+</html>
