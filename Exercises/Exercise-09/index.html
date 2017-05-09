@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>
+    Exercise 5
+  </title>
+  <style>
+	  body {
+	  	margin: 0;
+	  }
+
+  	button {
+  		padding: 5px;
+  		margin: 5px;
+  		font-size: 1.0em;
+  		cursor: pointer;
+  	}
+
+  	.nav {
+  		position: fixed;
+  		top:100px;
+  		left:0;
+  		background-color: #pink;
+  		padding: 15px;
+  	}
+
+    .box {
+    	height: 800px;
+    	color: yellow;
+    	background-size: cover;
+    	background-position: center center;
+    	text-align: center;
+    	padding: 25px;
+    }
+
+    .s1 {background-image: url('assets/1.jpg');}
+    .s2 {background-image: url('assets/2.jpg');}
+    .s3 {background-image: url('assets/3.jpg');}
+    .s4 {background-image: url('assets/4.jpg');}
+    .s5 {background-image: url('assets/5.jpg');}
+
+  </style>
+
+  <script>
+
+  	$(document).ready(function(){
+
+  		$("#btn-s1").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s1").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s2").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s2").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s3").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s3").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s4").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s4").offset().top
+			    }, 1000);
+			});
+
+  		$("#btn-s5").click(function() {
+			    $('html, body').animate({
+			        scrollTop: $(".s5").offset().top
+			    }, 1000);
+			});
+
+			console.log( $(".s5").offset() );
+
+
+  	});
+    
+  </script>
+</head>
+
+<body>
+
+	<div class="nav">
+		<button id="btn-s1">Puppy 1</button><br />
+		<button id="btn-s2">Puppy 2</button><br />
+		<button id="btn-s3">Puppy 3</button><br />
+		<button id="btn-s4">Puppy 4</button><br />
+		<button id="btn-s5">Puppy 5</button><br />
+	</div>
+  
+  <div class="box s1">
+  	First
+  </div>
+  
+  <div class="box s2">
+  	Second
+  </div>
+  
+  <div class="box s3">
+  	Third
+  </div>
+  
+  <div class="box s4">
+  	Fourth
+  </div>
+  
+  <div class="box s5">
+  	Fifth
+  </div>
+
+</body>
+</html>
