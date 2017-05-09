@@ -25,7 +25,7 @@ function setup() {
     
   	lung = loadImage("lungs.png");
 	//image(lung,0,0,700,500);
-    image(lung,windowWidth/2-350,windowHeight/2-360,800,500);
+    
     createCanvas(windowWidth,windowHeight);
 
     background(lung); // ADD IMAGE TO BACKGROUND
@@ -37,7 +37,7 @@ function setup() {
 function draw() {
 	
     background(100, 149, 237);
-    
+    image(lung,windowWidth/2-350,windowHeight/2-360,800,500);
 	//move();
 	bounce();
 	display();
