@@ -28,7 +28,7 @@ function setup() {
     image(lung,windowWidth/2-350,windowHeight/2-360,800,500);
     createCanvas(windowWidth,windowHeight);
 
-    //background(lung); // ADD IMAGE TO BACKGROUND
+    background(lung); // ADD IMAGE TO BACKGROUND
     
 
     
