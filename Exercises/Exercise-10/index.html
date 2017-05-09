@@ -5,11 +5,20 @@
 		<script>
 
 			$(document).ready(function(){
-
+				
+				var myVideo = document.getElementById("sunset");
+				
 				var dogAudio = $("#bark")[0];
 				$("#box1").mouseenter(function(){
 					dogAudio.play();
+
 				});
+				$("#box2").mouseenter(function(){
+					myVideo.play();
+					
+				});
+
+				
 				
 			});
 
@@ -17,12 +26,13 @@
 
 		<style>
 			#box1{
-				width: 1200px;
-				height: 1200px;
+				width: 900px;
+				height: 900px;
 				background-image: url(fish.png);
 				background-repeat: no-repeat;
 				/*background-color: red;*/
 			}
+			
 		</style>
 	</head>
 
@@ -33,6 +43,11 @@
 		<audio id="bark">
 			<source src="bark.wav" type="audio/wav">
 		</audio>
+
+		<video id="sunset" width="700" autoplay>
+			<source src="sunset.mp4">
+			Sorry, your browser doesn't support HTML5 video :(
+		</video>
 
 
 	</body>
