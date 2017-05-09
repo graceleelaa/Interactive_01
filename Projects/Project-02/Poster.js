@@ -24,11 +24,11 @@ var lung;
 function setup() {
     
   	lung = loadImage("lungs.png");
-	//image(lung,0,0,700,500);
+	image(lung,0,0,700,500);
     
     createCanvas(windowWidth,windowHeight);
 
-   // background(lung); // ADD IMAGE TO BACKGROUND
+    background(lung); // ADD IMAGE TO BACKGROUND
     
 
     
